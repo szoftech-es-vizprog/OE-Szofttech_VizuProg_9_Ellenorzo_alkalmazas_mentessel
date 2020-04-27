@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ArrayOfTantargy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tantargy>
+    <Nev>Matematika</Nev>
+    <Jegyek>
+      <Jegy>
+        <Erdemjegy>5</Erdemjegy>
+      </Jegy>
+      <Jegy>
+        <Erdemjegy>5</Erdemjegy>
+      </Jegy>
+      <Jegy>
+        <Erdemjegy>4</Erdemjegy>
+      </Jegy>
+    </Jegyek>
+  </Tantargy>
+  <Tantargy>
+    <Nev>Archi</Nev>
+    <Jegyek>
+      <Jegy>
+        <Erdemjegy>2</Erdemjegy>
+      </Jegy>
+      <Jegy>
+        <Erdemjegy>2</Erdemjegy>
+      </Jegy>
+      <Jegy>
+        <Erdemjegy>3</Erdemjegy>
+      </Jegy>
+    </Jegyek>
+  </Tantargy>
+</ArrayOfTantargy>

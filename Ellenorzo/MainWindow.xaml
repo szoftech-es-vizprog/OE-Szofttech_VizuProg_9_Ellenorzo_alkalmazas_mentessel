@@ -1,0 +1,51 @@
+﻿<Window x:Class="Ellenorzo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ellenorzo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="493.139">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="174*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="targy_hozzadas" Content="Tárgy hozzáadása" Grid.Column="1" HorizontalAlignment="Right" Margin="0,12,7,0" Width="157" Height="20" VerticalAlignment="Top" Click="targy_hozzadas_Click"/>
+        <Button x:Name="targyValasztas" Content="Tárgy kiválasztása" Grid.Column="1" HorizontalAlignment="Right" Margin="0,8,8,0" Width="152" Height="20" VerticalAlignment="Top" Grid.Row="1" Click="targyValasztas_Click"/>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="278" Margin="1,1,0,0" Grid.Row="2" VerticalAlignment="Top" Width="156">
+            <Button x:Name="modositashoz" Content="Betöltés módosításhoz" Click="modositashoz_Click"/>
+            <Button x:Name="jegyTorles" Content="Jegy törlés" Click="jegyTorles_Click"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+<Label Grid.Row="0" FontWeight="Bold" Grid.Column="0" Content="Átlag: "/>
+                <Label x:Name="atlagMegjelenes" Grid.Row="0" Grid.Column="1" Content="0" />
+            </Grid>
+            <Button x:Name="Mentes" Content="Mentés" Click="Mentes_Click"/>
+            <Button x:Name="Betoltes" Content="Betöltés" Click="Betoltes_Click"/>
+        </StackPanel>
+        <TextBox x:Name="targynev" HorizontalAlignment="Left" Height="23" Margin="8,11,0,0" TextWrapping="Wrap" Text="Tárgy neve" VerticalAlignment="Top" Width="302"/>
+        <ComboBox x:Name="targyvalaszto" HorizontalAlignment="Left" Margin="6,9,0,0" Grid.Row="1" VerticalAlignment="Top" Width="305" Height="22"/>
+        <ListBox x:Name="jegyek" HorizontalAlignment="Left" Height="279" Margin="9,5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="301">
+
+        </ListBox>
+        <TextBox x:Name="ujJegy" HorizontalAlignment="Left" Height="23" Margin="7,7,0,0" TextWrapping="Wrap" Text="Új jegy" VerticalAlignment="Top" Width="302" Grid.Row="4"/>
+        <Button x:Name="ujJegyMentese" Content="Új jegy rögzítése" Grid.Column="1" HorizontalAlignment="Left" Margin="4,7,0,0" Grid.Row="4" VerticalAlignment="Top" Width="158" Click="ujJegyMentese_Click"/>
+        <TextBox x:Name="jegyModositasa" HorizontalAlignment="Left" Height="23" Margin="6,6,0,0" TextWrapping="Wrap" Text="Modosítandó jegy" VerticalAlignment="Top" Width="302" Grid.Row="3"/>
+        <Button x:Name="modositas_mentes" Content="Módosítás mentése" Grid.Column="1" HorizontalAlignment="Left" Margin="4,7,0,0" Grid.Row="3" VerticalAlignment="Top" Width="158" Click="modositas_mentes_Click"/>
+
+    </Grid>
+</Window>
